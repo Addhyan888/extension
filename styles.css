@@ -1,0 +1,222 @@
+/* YouTube Transcript Summarizer Launcher - Styles */
+
+/* Notification */
+.yt-transcript-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  z-index: 9999;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.yt-transcript-notification.fade-out {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+/* Summarize Button */
+.yt-transcript-summarize-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 8px 0;
+  transition: background-color 0.2s;
+}
+
+.yt-transcript-summarize-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Transcript Sidebar */
+.yt-transcript-sidebar {
+  position: fixed;
+  top: 56px; /* YouTube header height */
+  right: 0;
+  width: 320px;
+  height: calc(100vh - 56px);
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.yt-transcript-sidebar.collapsed {
+  transform: translateX(calc(100% - 30px));
+}
+
+.yt-transcript-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.yt-transcript-sidebar-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.yt-transcript-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #606060;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yt-transcript-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.yt-transcript-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #606060;
+}
+
+.yt-transcript-actions {
+  padding: 12px 16px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yt-transcript-copy-btn {
+  background-color: #f1f1f1;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.yt-transcript-copy-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* First-time Setup Modal */
+.yt-transcript-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.yt-transcript-modal {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.yt-transcript-modal h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group .hint {
+  font-size: 12px;
+  color: #606060;
+  margin-top: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.form-actions button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-actions button.secondary {
+  background-color: #f1f1f1;
+  color: #0f0f0f;
+  border: none;
+}
+
+.form-actions button:not(.secondary) {
+  background-color: #065fd4;
+  color: white;
+  border: none;
+}
+
+.form-actions button:hover {
+  opacity: 0.9;
+}

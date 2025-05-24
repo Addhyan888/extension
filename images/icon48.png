@@ -1,0 +1,8 @@
+<svg xmlns="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3QeHehuPZhc4SUHu5Mk658KRw8EWN_Zzvjw&s" width="48" height="48" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="6" fill="#FF0000"/>
+  <path d="M19.5 31.5L33 24L19.5 16.5V31.5Z" fill="white"/>
+  <path d="M9 12H39V36H9V12Z" stroke="white" stroke-width="2" fill="none"/>
+  <path d="M39 18H44V30H39" stroke="white" stroke-width="2" fill="none"/>
+  <path d="M44 21L48 21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M44 27L48 27" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="https://i.ytimg.com/vi/4y9vjAs6WSk/maxresdefault.jpg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="16" fill="#FF0000"/>
+  <path d="M52 84L88 64L52 44V84Z" fill="white"/>
+  <path d="M24 32H104V96H24V32Z" stroke="white" stroke-width="4" fill="none"/>
+  <path d="M104 48H116V80H104" stroke="white" stroke-width="4" fill="none"/>
+  <path d="M116 56L128 56" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M116 72L128 72" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M40 108H88" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M64 96V108" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
