@@ -5,6 +5,10 @@ A Chrome extension that extracts YouTube video transcripts and helps you summari
 ## Features
 
 ### Transcript Sidebar
+
+https://github.com/user-attachments/assets/f5e12dba-6eef-4fcd-97bf-37833186c65d
+
+
 - Automatically extracts and displays the transcript of the current YouTube video in a sidebar
 - Collapsible interface that doesn't interfere with your YouTube viewing experience
 
